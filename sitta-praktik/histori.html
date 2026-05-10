@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Histori Transaksi | SITTA UT</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="topbar">
+  <nav class="container nav">
+    <a class="brand" href="dashboard.html"><div class="logo">UT</div><span>SITTA</span></a>
+    <div class="nav-links">
+      <a href="stok.html">Informasi Bahan Ajar</a>
+      <a href="tracking.html">Tracking Pengiriman</a>
+      <div class="dropdown">
+        <button class="dropbtn">Laporan ▾</button>
+        <div class="dropdown-content">
+          <a href="laporan.html#monitoring">Monitoring Progress DO Bahan Ajar</a>
+          <a href="laporan.html#rekap">Rekap Bahan Ajar</a>
+        </div>
+      </div>
+      <a href="histori.html">Histori Transaksi Bahan Ajar</a>
+      <button class="btn btn-danger" onclick="logout()">Keluar</button>
+    </div>
+    <div class="user-chip"><span class="avatar js-avatar">S</span><span class="js-user">Pengguna</span></div>
+  </nav>
+</header>
+<main id="reportsPage" class="container main">
+  <section class="hero"><div><p class="muted" style="font-weight:800">Histori Transaksi Bahan Ajar</p><h1>Riwayat Pemesanan</h1><p class="muted">Menampilkan histori transaksi dari data tracking dummy.</p></div></section>
+  <section class="card"><h2>Transaksi Bahan Ajar</h2><div class="table-wrap"><table id="reportTable"><thead><tr><th>No</th><th>Nomor DO</th><th>Nama</th><th>Ekspedisi</th><th>Status</th><th>Total</th></tr></thead><tbody></tbody></table></div></section>
+</main><script src="js/data.js"></script><script src="js/script.js"></script></body></html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Laporan | SITTA UT</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="topbar">
+  <nav class="container nav">
+    <a class="brand" href="dashboard.html"><div class="logo">UT</div><span>SITTA</span></a>
+    <div class="nav-links">
+      <a href="stok.html">Informasi Bahan Ajar</a>
+      <a href="tracking.html">Tracking Pengiriman</a>
+      <div class="dropdown">
+        <button class="dropbtn">Laporan ▾</button>
+        <div class="dropdown-content">
+          <a href="laporan.html#monitoring">Monitoring Progress DO Bahan Ajar</a>
+          <a href="laporan.html#rekap">Rekap Bahan Ajar</a>
+        </div>
+      </div>
+      <a href="histori.html">Histori Transaksi Bahan Ajar</a>
+      <button class="btn btn-danger" onclick="logout()">Keluar</button>
+    </div>
+    <div class="user-chip"><span class="avatar js-avatar">S</span><span class="js-user">Pengguna</span></div>
+  </nav>
+</header>
+<main id="reportsPage" class="container main">
+  <section class="hero"><div><p class="muted" style="font-weight:800">Laporan SITTA</p><h1>Monitoring dan Rekap Bahan Ajar</h1><p class="muted">Halaman tambahan untuk melengkapi menu laporan pada dashboard.</p></div><div class="stats"><div class="stat"><span class="muted">Total DO</span><b id="reportDO">0</b></div><div class="stat"><span class="muted">Total Modul</span><b id="reportItems">0</b></div><div class="stat"><span class="muted">Nilai Transaksi</span><b id="reportIncome">Rp0</b></div></div></section>
+  <section class="report-list">
+    <article id="monitoring" class="card report-card"><h3>Monitoring Progress DO Bahan Ajar</h3><p class="muted">Progress dihitung dari jumlah riwayat perjalanan pada setiap nomor Delivery Order.</p><div class="progress"><div class="bar" style="width:75%"></div></div><b>Rata-rata progress: 75%</b></article>
+    <article id="rekap" class="card report-card"><h3>Rekap Bahan Ajar</h3><p class="muted">Rekap stok dan transaksi ditampilkan dari data dummy JavaScript.</p><div class="progress"><div class="bar" style="width:88%"></div></div><b>Ketersediaan stok baik</b></article>
+  </section>
+  <section class="card" style="margin-top:20px"><h2>Daftar DO</h2><div class="table-wrap"><table id="reportTable"><thead><tr><th>No</th><th>Nomor DO</th><th>Nama</th><th>Ekspedisi</th><th>Status</th><th>Total</th></tr></thead><tbody></tbody></table></div></section>
+</main><script src="js/data.js"></script><script src="js/script.js"></script></body></html>
